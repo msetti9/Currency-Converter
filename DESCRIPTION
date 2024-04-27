@@ -1,7 +1,7 @@
 Package: CurrencyConverter
 Title: Currency Conversion in R
 Version: 0.0.0.9000
-Authors@R: Papa @Setti  <your.email@example.com> [aut, cre]
+Authors@R: “Mounika Chalamalasetti <mchalamalasetti@usf.edu> [aut, cre]"
 Description: It offers error-handling which is already build in, methods and real-time exchange rate support for currency conversion inside R. With the convenience of specifying the amount, source currency, and target currency, this package makes currency conversion jobs easier for users while guaranteeing accuracy and dependability in the conversion process.
 Depends: R (>= 3.1.2)
 License: CC0
