@@ -1,0 +1,63 @@
+# Currency Conversion Package Documentation
+
+## Overview
+
+The Currency Conversion package allows users to perform conversions between different currencies.
+
+## Functions
+
+### `currency_conversion`
+
+#### Purpose
+
+The `currency_conversion` function initializes a currency conversion object with the specified parameters.
+
+#### Inputs
+
+- `amount`: Numeric value or vector representing the amount(s) to convert.
+- `from_currency`: Character string or vector specifying the currency/currencies to convert from.
+- `to_currency`: Character string or vector specifying the currency/currencies to convert to.
+- `percentage_change`: Numeric value representing the percentage change(s) in currency rate (optional, default is 0).
+- `rounding_option`: Character string specifying the rounding option for converted amount(s) (optional, default is "none").
+
+#### Outputs
+
+- Currency conversion object.
+
+#### Usage
+
+```r
+conversion_obj <- currency_conversion(amount = 100, from_currency = 'USD', to_currency = 'INR', percentage_change = 2, rounding_option = 'up')
+```
+
+### `convertcurrency`
+
+#### Purpose
+
+The convertcurrency function performs currency conversion based on the provided conversion object.
+
+#### Inputs
+
+- `conversion_obj`: Currency conversion object created using currency_conversion function.
+
+#### Outputs
+
+- Numeric value or vector representing the converted amount(s).
+
+#### Usage
+
+```r
+converted_amount <- convertcurrency(conversion_obj)
+print(converted_amount)
+```
+
+## Additional Information
+
+- The currency_conversion function initializes a currency conversion object with parameters such as amount, from_currency, to_currency, percentage_change, and rounding_option.
+- Conversion rates are hardcoded within the function for demonstration purposes. For real-world applications, consider fetching real-time rates from an API.
+
+## Insights and Challenges
+
+- One crucial factor to take into account was how to keep the package design simple while still retaining flexibility..
+- Future upgrades could involve introducing methods for currency caching and supporting more currencies.
+
