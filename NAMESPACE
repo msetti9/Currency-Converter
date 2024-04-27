@@ -1,0 +1,6 @@
+export(currency_conversion)
+exportMethods(convertcurrency)
+
+importFrom(methods, as)
+importFrom(methods, is)
+importFrom(methods, Structure)
